@@ -27,8 +27,8 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtContra = New System.Windows.Forms.TextBox()
+        Me.txtUsu = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
@@ -82,21 +82,21 @@ Partial Class Form1
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Iniciar Sesión"
         '
-        'TextBox2
+        'txtContra
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Comic Sans MS", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(188, 172)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(272, 37)
-        Me.TextBox2.TabIndex = 2
+        Me.txtContra.Font = New System.Drawing.Font("Comic Sans MS", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtContra.Location = New System.Drawing.Point(188, 172)
+        Me.txtContra.Name = "txtContra"
+        Me.txtContra.Size = New System.Drawing.Size(272, 37)
+        Me.txtContra.TabIndex = 2
         '
-        'TextBox1
+        'txtUsu
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Comic Sans MS", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(188, 117)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(272, 37)
-        Me.TextBox1.TabIndex = 0
+        Me.txtUsu.Font = New System.Drawing.Font("Comic Sans MS", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUsu.Location = New System.Drawing.Point(188, 117)
+        Me.txtUsu.Name = "txtUsu"
+        Me.txtUsu.Size = New System.Drawing.Size(272, 37)
+        Me.txtUsu.TabIndex = 0
         '
         'Label5
         '
@@ -119,9 +119,9 @@ Partial Class Form1
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtContra)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtUsu)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -133,7 +133,7 @@ Partial Class Form1
     Friend WithEvents Button1 As Windows.Forms.Button
     Friend WithEvents Label3 As Windows.Forms.Label
     Friend WithEvents Label4 As Windows.Forms.Label
-    Friend WithEvents TextBox2 As Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As Windows.Forms.TextBox
+    Friend WithEvents txtContra As Windows.Forms.TextBox
+    Friend WithEvents txtUsu As Windows.Forms.TextBox
     Friend WithEvents Label5 As Windows.Forms.Label
 End Class
