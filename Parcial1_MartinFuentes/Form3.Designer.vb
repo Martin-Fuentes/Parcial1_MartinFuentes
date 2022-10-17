@@ -26,10 +26,11 @@ Partial Class Form3
         Me.tablaProduc = New System.Windows.Forms.DataGridView()
         Me.tablaAnadido = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.btnComprar = New System.Windows.Forms.Button()
         Me.tot = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnModificar = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.tablaProduc, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tablaAnadido, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -46,49 +47,61 @@ Partial Class Form3
         'tablaProduc
         '
         Me.tablaProduc.AllowUserToAddRows = False
+        Me.tablaProduc.AllowUserToDeleteRows = False
+        Me.tablaProduc.AllowUserToResizeColumns = False
+        Me.tablaProduc.AllowUserToResizeRows = False
+        Me.tablaProduc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.tablaProduc.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders
         Me.tablaProduc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.tablaProduc.Location = New System.Drawing.Point(27, 73)
         Me.tablaProduc.Name = "tablaProduc"
         Me.tablaProduc.ReadOnly = True
-        Me.tablaProduc.Size = New System.Drawing.Size(373, 348)
+        Me.tablaProduc.Size = New System.Drawing.Size(727, 170)
         Me.tablaProduc.TabIndex = 1
         '
         'tablaAnadido
         '
         Me.tablaAnadido.AllowUserToAddRows = False
+        Me.tablaAnadido.AllowUserToDeleteRows = False
+        Me.tablaAnadido.AllowUserToResizeColumns = False
+        Me.tablaAnadido.AllowUserToResizeRows = False
+        Me.tablaAnadido.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.tablaAnadido.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders
         Me.tablaAnadido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.tablaAnadido.Location = New System.Drawing.Point(535, 73)
+        Me.tablaAnadido.Location = New System.Drawing.Point(27, 313)
         Me.tablaAnadido.Name = "tablaAnadido"
         Me.tablaAnadido.ReadOnly = True
-        Me.tablaAnadido.Size = New System.Drawing.Size(262, 348)
+        Me.tablaAnadido.Size = New System.Drawing.Size(727, 170)
         Me.tablaAnadido.TabIndex = 2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(422, 230)
+        Me.Button1.Location = New System.Drawing.Point(330, 267)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Agregar >>"
+        Me.Button1.Text = "AÑADIR"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnEliminar
         '
-        Me.Button3.Location = New System.Drawing.Point(821, 220)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 5
-        Me.Button3.Text = "Eliminar"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnEliminar.Enabled = False
+        Me.btnEliminar.Location = New System.Drawing.Point(821, 220)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
+        Me.btnEliminar.TabIndex = 5
+        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnComprar
         '
-        Me.Button2.Location = New System.Drawing.Point(820, 313)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Comprar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnComprar.Enabled = False
+        Me.btnComprar.Location = New System.Drawing.Point(820, 313)
+        Me.btnComprar.Name = "btnComprar"
+        Me.btnComprar.Size = New System.Drawing.Size(75, 23)
+        Me.btnComprar.TabIndex = 6
+        Me.btnComprar.Text = "Comprar"
+        Me.btnComprar.UseVisualStyleBackColor = True
         '
         'tot
         '
@@ -98,24 +111,35 @@ Partial Class Form3
         Me.tot.Size = New System.Drawing.Size(0, 13)
         Me.tot.TabIndex = 7
         '
-        'Button4
+        'btnModificar
         '
-        Me.Button4.Location = New System.Drawing.Point(821, 267)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 8
-        Me.Button4.Text = "Modificar"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnModificar.Enabled = False
+        Me.btnModificar.Location = New System.Drawing.Point(821, 267)
+        Me.btnModificar.Name = "btnModificar"
+        Me.btnModificar.Size = New System.Drawing.Size(75, 23)
+        Me.btnModificar.TabIndex = 8
+        Me.btnModificar.Text = "Modificar"
+        Me.btnModificar.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(869, 415)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(97, 23)
+        Me.Button2.TabIndex = 9
+        Me.Button2.Text = "Cerrar Sesión"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1000, 450)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.tot)
+        Me.ClientSize = New System.Drawing.Size(1000, 546)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnModificar)
+        Me.Controls.Add(Me.tot)
+        Me.Controls.Add(Me.btnComprar)
+        Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.tablaAnadido)
         Me.Controls.Add(Me.tablaProduc)
@@ -132,9 +156,10 @@ Partial Class Form3
     Friend WithEvents Label1 As Windows.Forms.Label
     Friend WithEvents tablaAnadido As Windows.Forms.DataGridView
     Friend WithEvents Button1 As Windows.Forms.Button
-    Friend WithEvents Button3 As Windows.Forms.Button
-    Friend WithEvents Button2 As Windows.Forms.Button
+    Friend WithEvents btnEliminar As Windows.Forms.Button
+    Friend WithEvents btnComprar As Windows.Forms.Button
     Friend WithEvents tot As Windows.Forms.Label
     Friend WithEvents tablaProduc As Windows.Forms.DataGridView
-    Friend WithEvents Button4 As Windows.Forms.Button
+    Friend WithEvents btnModificar As Windows.Forms.Button
+    Friend WithEvents Button2 As Windows.Forms.Button
 End Class

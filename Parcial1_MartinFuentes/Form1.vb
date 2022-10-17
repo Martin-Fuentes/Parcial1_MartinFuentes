@@ -19,25 +19,22 @@ Public Class Form1
                 reader = cmd.ExecuteReader()
 
                 If (reader.Read() = Nothing) Then
-                    MsgBox("Usuario o contraseña incorrectos", MsgBoxStyle.MsgBoxHelp, "Error")
+                    MsgBox("Usuario o contraseña incorrectos", MsgBoxStyle.Information, "Error")
                 Else
-                    If (reader.Item(0) = "Cliente") Then
-                        Me.Hide()
-                        Dim frm As New Form3(reader.Item(1))
-                        frm.Show()
-                    Else
-                        Me.Hide()
-                        Dim frm As New Form4()
-                        frm.Show()
-                    End If
+
+                    Me.Hide()
+                    Dim frm As New Form3(-1, reader.Item(1))
+                    frm.Show()
+
                 End If
+                reader.Close()
             Else
-                MsgBox("Por favor, complete los campos", MsgBoxStyle.MsgBoxHelp, "Titulo")
+                MsgBox("Por favor, complete los campos", MsgBoxStyle.Information, "Titulo")
 
             End If
 
         Catch ex As Exception '
-            MsgBox(ex.Message, MsgBoxStyle.MsgBoxHelp, "Titulo") '
+            MsgBox(ex.Message, MsgBoxStyle.Information, "Titulo") '
         End Try '
     End Sub
 End Class

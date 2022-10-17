@@ -25,20 +25,28 @@ Public Class Form2
                     cmd.Parameters.Add("@pass", MySqlDbType.VarChar).Value = txtContra2.Text
                     cmd.Parameters.Add("@rol", MySqlDbType.VarChar).Value = "Cliente"
                     cmd.ExecuteNonQuery()
-                    MsgBox("SE HA CREADO SU CUENTA SATISFACTORIAMENTE", MsgBoxStyle.MsgBoxHelp, "Error")
+                    MsgBox("SE HA CREADO SU CUENTA SATISFACTORIAMENTE", MsgBoxStyle.Information, "Error")
                     Me.Close()
                     Dim frm As New Form1()
                     frm.Show()
                 Else
-                    MsgBox("La segunda contraseña no coincide", MsgBoxStyle.MsgBoxHelp, "Error")
+                    MsgBox("La segunda contraseña no coincide", MsgBoxStyle.Information, "Error")
 
                 End If
             Else
-                MsgBox("Formato de téléfono incorrecta", MsgBoxStyle.MsgBoxHelp, "Error")
+                MsgBox("Formato de téléfono incorrecta", MsgBoxStyle.Information, "Error")
             End If
         Else
-            MsgBox("Faltan campos por llenar", MsgBoxStyle.MsgBoxHelp, "Error")
+            MsgBox("Faltan campos por llenar", MsgBoxStyle.Information, "Error")
         End If
+
+    End Sub
+
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
 
     End Sub
 End Class
