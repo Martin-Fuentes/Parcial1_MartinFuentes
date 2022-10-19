@@ -23,7 +23,7 @@ Public Class Form3
         InitializeComponent()
         Me.ced = cedula
         con = New conexion()
-        cmd = New MySqlCommand("Select id_producto as 'ID', nombre as 'Nombre', marca as 'Marca', precio as 'Precio' from producto", con.getConexion())
+        cmd = New MySqlCommand("Select id_producto as 'ID', nombre as 'Artículo', marca as 'Marca', precio as 'Precio' from producto", con.getConexion())
         reader = cmd.ExecuteReader()
 
         tabla = New DataTable()
@@ -37,12 +37,12 @@ Public Class Form3
         reader = cmd.ExecuteReader()
         reader.Read()
 
-        If (Not reader.Item(0) = Nothing) Then
+        Try
             id_com = reader.Item(0) + 1
 
-        Else
+        Catch
             id_com = 1
-        End If
+        End Try
         Dim fechaActual As Date = Date.Now
         reader.Close()
         con = New conexion()
@@ -110,7 +110,7 @@ Public Class Form3
 
 
             con = New conexion()
-            cmd = New MySqlCommand("Select producto.id_producto as 'ID', nombre as 'Nombre', marca as 'Marca', precio as 'Precio',compra_producto.cantidad as 'Cantidad',(precio*compra_producto.cantidad)*compra_producto.itbms as 'ITBMS', (precio*compra_producto.cantidad)+(precio*compra_producto.cantidad)*compra_producto.itbms as 'Total Producto'  from producto, compra_producto WHERE producto.id_producto=compra_producto.id_producto And compra_producto.id_compra=" & id_com, con.getConexion())
+            cmd = New MySqlCommand("Select producto.id_producto as 'ID', nombre as 'Artículo', marca as 'Marca', precio as 'Precio',compra_producto.cantidad as 'Cantidad',ROUND((precio*compra_producto.cantidad)*compra_producto.itbms,2) as 'ITBMS', ROUND((precio*compra_producto.cantidad)+(precio*compra_producto.cantidad)*compra_producto.itbms,2) as 'Total Artículo' from producto, compra_producto WHERE producto.id_producto=compra_producto.id_producto And compra_producto.id_compra=" & id_com, con.getConexion())
             reader = cmd.ExecuteReader()
             tabla = New DataTable()
             tabla.Load(reader)
@@ -122,7 +122,7 @@ Public Class Form3
             reader = cmd.ExecuteReader()
             reader.Read()
             pre_tot = reader.Item(0)
-            tot.Text = "Tu compra: " & pre_tot
+            tot.Text = "Tu compra: " & Format(pre_tot, "f")
             con = New conexion()
             cmd = New MySqlCommand("Update compra set total = @tot where id_compra = @id", con.getConexion())
             cmd.Parameters.Add("@tot", MySqlDbType.Decimal).Value = pre_tot
@@ -156,7 +156,7 @@ Public Class Form3
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
         Dim id = tablaAnadido.CurrentRow.Cells("ID").Value
-        Dim art = tablaAnadido.CurrentRow.Cells("Nombre").Value
+        Dim art = tablaAnadido.CurrentRow.Cells("Artículo").Value
         If MessageBox.Show("¿Desea Eliminar " & art & " de los artículos a comprar?", "Eliminar", MessageBoxButtons.YesNo) = DialogResult.Yes Then
             con = New conexion()
             cmd = New MySqlCommand("Delete from compra_producto where id_producto = @id_p and id_compra = @id_c", con.getConexion())
@@ -165,7 +165,7 @@ Public Class Form3
             cmd.ExecuteNonQuery()
 
             con = New conexion()
-            cmd = New MySqlCommand("Select producto.id_producto as 'ID', nombre as 'Nombre', marca as 'Marca', precio as 'Precio',compra_producto.cantidad as 'Cantidad',(precio*compra_producto.cantidad)*compra_producto.itbms as 'ITBMS', (precio*compra_producto.cantidad)+(precio*compra_producto.cantidad)*compra_producto.itbms as 'Total Producto'  from producto, compra_producto WHERE producto.id_producto=compra_producto.id_producto And compra_producto.id_compra=" & id_com, con.getConexion())
+            cmd = New MySqlCommand("Select producto.id_producto as 'ID', nombre as 'Artículo', marca as 'Marca', precio as 'Precio',compra_producto.cantidad as 'Cantidad',ROUND((precio*compra_producto.cantidad)*compra_producto.itbms,2) as 'ITBMS', ROUND((precio*compra_producto.cantidad)+(precio*compra_producto.cantidad)*compra_producto.itbms,2) as 'Total Artículo' from producto, compra_producto WHERE producto.id_producto=compra_producto.id_producto And compra_producto.id_compra=" & id_com, con.getConexion())
             reader = cmd.ExecuteReader()
             tabla = New DataTable()
             tabla.Load(reader)
@@ -178,7 +178,7 @@ Public Class Form3
             reader.Read()
             Try
                 pre_tot = reader.Item(0)
-                tot.Text = "Tu compra: " & pre_tot
+                tot.Text = "Tu compra: " & Format(pre_tot, "f")
             Catch
                 tot.Text = ""
                 pre_tot = 0
@@ -205,9 +205,9 @@ Public Class Form3
 
         Try
             Dim id = tablaAnadido.CurrentRow.Cells("ID").Value
-            Dim proc = tablaAnadido.CurrentRow.Cells("Nombre").Value
+            Dim proc = tablaAnadido.CurrentRow.Cells("Artículo").Value
             Do
-                Cant = InputBox("Ingrese la cantidad que desea llevar del producto " & proc, "Insertar", "Ingrese cantidad")
+                Cant = InputBox("Ingrese la cantidad de " & proc & " que desea llevar", "Insertar", "Ingrese cantidad")
                 If (Cant <= 0) Then
                     MsgBox("Error, la cantidad debe ser mayor a cero", MsgBoxStyle.Information, "Error")
                 End If
@@ -221,7 +221,7 @@ Public Class Form3
                 cmd.Parameters.Add("@id_c", MySqlDbType.VarChar).Value = id_com
                 cmd.ExecuteNonQuery()
                 con = New conexion()
-                cmd = New MySqlCommand("Select producto.id_producto as 'ID', nombre as 'Nombre', marca as 'Marca', precio as 'Precio',compra_producto.cantidad as 'Cantidad',(precio*compra_producto.cantidad)*compra_producto.itbms as 'ITBMS', (precio*compra_producto.cantidad)+(precio*compra_producto.cantidad)*compra_producto.itbms as 'Total Producto'  from producto, compra_producto WHERE producto.id_producto=compra_producto.id_producto And compra_producto.id_compra=" & id_com, con.getConexion())
+                cmd = New MySqlCommand("Select producto.id_producto as 'ID', nombre as 'Artículo', marca as 'Marca', precio as 'Precio',compra_producto.cantidad as 'Cantidad',ROUND((precio*compra_producto.cantidad)*compra_producto.itbms,2) as 'ITBMS', ROUND((precio*compra_producto.cantidad)+(precio*compra_producto.cantidad)*compra_producto.itbms,2) as 'Total Artículo' from producto, compra_producto WHERE producto.id_producto=compra_producto.id_producto And compra_producto.id_compra=" & id_com, con.getConexion())
                 reader = cmd.ExecuteReader()
                 tabla = New DataTable()
                 tabla.Load(reader)
@@ -233,7 +233,7 @@ Public Class Form3
                 reader = cmd.ExecuteReader()
                 reader.Read()
                 pre_tot = reader.Item(0)
-                tot.Text = pre_tot
+                tot.Text = "Tu compra: " & Format(pre_tot, "f")
                 reader.Close()
 
                 con = New conexion()

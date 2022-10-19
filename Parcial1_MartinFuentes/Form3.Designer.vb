@@ -22,6 +22,7 @@ Partial Class Form3
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form3))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.tablaProduc = New System.Windows.Forms.DataGridView()
         Me.tablaAnadido = New System.Windows.Forms.DataGridView()
@@ -38,11 +39,14 @@ Partial Class Form3
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(327, 27)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(18, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.Size = New System.Drawing.Size(424, 50)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Cliente"
+        Me.Label1.Text = "Tecnología al por mayor"
         '
         'tablaProduc
         '
@@ -52,11 +56,12 @@ Partial Class Form3
         Me.tablaProduc.AllowUserToResizeRows = False
         Me.tablaProduc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.tablaProduc.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders
+        Me.tablaProduc.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
         Me.tablaProduc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.tablaProduc.Location = New System.Drawing.Point(27, 73)
         Me.tablaProduc.Name = "tablaProduc"
         Me.tablaProduc.ReadOnly = True
-        Me.tablaProduc.Size = New System.Drawing.Size(727, 170)
+        Me.tablaProduc.Size = New System.Drawing.Size(727, 180)
         Me.tablaProduc.TabIndex = 1
         '
         'tablaAnadido
@@ -67,74 +72,99 @@ Partial Class Form3
         Me.tablaAnadido.AllowUserToResizeRows = False
         Me.tablaAnadido.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.tablaAnadido.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders
+        Me.tablaAnadido.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
         Me.tablaAnadido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.tablaAnadido.Location = New System.Drawing.Point(27, 313)
+        Me.tablaAnadido.Location = New System.Drawing.Point(27, 338)
         Me.tablaAnadido.Name = "tablaAnadido"
         Me.tablaAnadido.ReadOnly = True
-        Me.tablaAnadido.Size = New System.Drawing.Size(727, 170)
+        Me.tablaAnadido.Size = New System.Drawing.Size(727, 196)
         Me.tablaAnadido.TabIndex = 2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(330, 267)
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(357, 259)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(68, 73)
         Me.Button1.TabIndex = 3
-        Me.Button1.Text = "AÑADIR"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'btnEliminar
         '
+        Me.btnEliminar.BackColor = System.Drawing.Color.Transparent
         Me.btnEliminar.Enabled = False
-        Me.btnEliminar.Location = New System.Drawing.Point(821, 220)
+        Me.btnEliminar.FlatAppearance.BorderSize = 0
+        Me.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEliminar.Location = New System.Drawing.Point(799, 349)
         Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
+        Me.btnEliminar.Size = New System.Drawing.Size(54, 54)
         Me.btnEliminar.TabIndex = 5
-        Me.btnEliminar.Text = "Eliminar"
-        Me.btnEliminar.UseVisualStyleBackColor = True
+        Me.btnEliminar.UseVisualStyleBackColor = False
         '
         'btnComprar
         '
+        Me.btnComprar.BackColor = System.Drawing.Color.Transparent
         Me.btnComprar.Enabled = False
-        Me.btnComprar.Location = New System.Drawing.Point(820, 313)
+        Me.btnComprar.FlatAppearance.BorderSize = 0
+        Me.btnComprar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnComprar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.btnComprar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnComprar.Location = New System.Drawing.Point(799, 479)
         Me.btnComprar.Name = "btnComprar"
-        Me.btnComprar.Size = New System.Drawing.Size(75, 23)
+        Me.btnComprar.Size = New System.Drawing.Size(54, 55)
         Me.btnComprar.TabIndex = 6
-        Me.btnComprar.Text = "Comprar"
-        Me.btnComprar.UseVisualStyleBackColor = True
+        Me.btnComprar.UseVisualStyleBackColor = False
         '
         'tot
         '
         Me.tot.AutoSize = True
-        Me.tot.Location = New System.Drawing.Point(838, 385)
+        Me.tot.BackColor = System.Drawing.Color.Transparent
+        Me.tot.Font = New System.Drawing.Font("Comic Sans MS", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tot.ForeColor = System.Drawing.Color.White
+        Me.tot.Location = New System.Drawing.Point(491, 552)
         Me.tot.Name = "tot"
-        Me.tot.Size = New System.Drawing.Size(0, 13)
+        Me.tot.Size = New System.Drawing.Size(0, 35)
         Me.tot.TabIndex = 7
         '
         'btnModificar
         '
+        Me.btnModificar.BackColor = System.Drawing.Color.Transparent
         Me.btnModificar.Enabled = False
-        Me.btnModificar.Location = New System.Drawing.Point(821, 267)
+        Me.btnModificar.FlatAppearance.BorderSize = 0
+        Me.btnModificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnModificar.Location = New System.Drawing.Point(799, 409)
         Me.btnModificar.Name = "btnModificar"
-        Me.btnModificar.Size = New System.Drawing.Size(75, 23)
+        Me.btnModificar.Size = New System.Drawing.Size(54, 54)
         Me.btnModificar.TabIndex = 8
-        Me.btnModificar.Text = "Modificar"
-        Me.btnModificar.UseVisualStyleBackColor = True
+        Me.btnModificar.UseVisualStyleBackColor = False
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(869, 415)
+        Me.Button2.BackColor = System.Drawing.Color.Transparent
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(875, 400)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(97, 23)
+        Me.Button2.Size = New System.Drawing.Size(93, 93)
         Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Cerrar Sesión"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1000, 546)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(1008, 606)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnModificar)
         Me.Controls.Add(Me.tot)
@@ -144,7 +174,9 @@ Partial Class Form3
         Me.Controls.Add(Me.tablaAnadido)
         Me.Controls.Add(Me.tablaProduc)
         Me.Controls.Add(Me.Label1)
+        Me.MaximizeBox = False
         Me.Name = "Form3"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"
         CType(Me.tablaProduc, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tablaAnadido, System.ComponentModel.ISupportInitialize).EndInit()

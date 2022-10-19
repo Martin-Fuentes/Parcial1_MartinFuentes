@@ -49,4 +49,10 @@ Public Class Form2
     Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
 
     End Sub
+
+    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
+        Me.Close()
+        Dim frm As New Form1()
+        frm.Show()
+    End Sub
 End Class

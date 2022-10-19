@@ -40,108 +40,110 @@ Partial Class Form2
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtContra1 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.comboSexo = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(160, 63)
+        Me.Label1.Location = New System.Drawing.Point(139, 97)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(56, 21)
+        Me.Label1.Size = New System.Drawing.Size(72, 27)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Cédula"
         '
         'txtCed
         '
-        Me.txtCed.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCed.Location = New System.Drawing.Point(222, 64)
+        Me.txtCed.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCed.Location = New System.Drawing.Point(217, 95)
         Me.txtCed.Name = "txtCed"
-        Me.txtCed.Size = New System.Drawing.Size(240, 24)
+        Me.txtCed.Size = New System.Drawing.Size(265, 34)
         Me.txtCed.TabIndex = 1
         '
         'txtUsu
         '
-        Me.txtUsu.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUsu.Location = New System.Drawing.Point(222, 395)
+        Me.txtUsu.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUsu.Location = New System.Drawing.Point(217, 426)
         Me.txtUsu.Name = "txtUsu"
-        Me.txtUsu.Size = New System.Drawing.Size(240, 24)
+        Me.txtUsu.Size = New System.Drawing.Size(265, 34)
         Me.txtUsu.TabIndex = 3
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(153, 393)
+        Me.Label2.Location = New System.Drawing.Point(131, 427)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(63, 21)
+        Me.Label2.Size = New System.Drawing.Size(80, 27)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Usuario"
         '
         'txtCorreo
         '
-        Me.txtCorreo.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCorreo.Location = New System.Drawing.Point(222, 340)
+        Me.txtCorreo.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCorreo.Location = New System.Drawing.Point(217, 371)
         Me.txtCorreo.Name = "txtCorreo"
-        Me.txtCorreo.Size = New System.Drawing.Size(240, 24)
+        Me.txtCorreo.Size = New System.Drawing.Size(265, 34)
         Me.txtCorreo.TabIndex = 5
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(159, 338)
+        Me.Label3.Location = New System.Drawing.Point(138, 372)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(57, 21)
+        Me.Label3.Size = New System.Drawing.Size(73, 27)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Correo"
         '
         'txtTel
         '
-        Me.txtTel.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTel.Location = New System.Drawing.Point(222, 285)
+        Me.txtTel.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTel.Location = New System.Drawing.Point(217, 316)
         Me.txtTel.Name = "txtTel"
-        Me.txtTel.Size = New System.Drawing.Size(240, 24)
+        Me.txtTel.Size = New System.Drawing.Size(265, 34)
         Me.txtTel.TabIndex = 7
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(144, 283)
+        Me.Label4.Location = New System.Drawing.Point(119, 317)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(72, 21)
+        Me.Label4.Size = New System.Drawing.Size(92, 27)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Teléfono"
         '
         'txtDir
         '
-        Me.txtDir.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDir.Location = New System.Drawing.Point(222, 230)
+        Me.txtDir.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDir.Location = New System.Drawing.Point(217, 261)
         Me.txtDir.Name = "txtDir"
-        Me.txtDir.Size = New System.Drawing.Size(240, 24)
+        Me.txtDir.Size = New System.Drawing.Size(265, 34)
         Me.txtDir.TabIndex = 9
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(140, 228)
+        Me.Label5.Location = New System.Drawing.Point(115, 262)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(76, 21)
+        Me.Label5.Size = New System.Drawing.Size(96, 27)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Dirección"
         '
@@ -149,111 +151,134 @@ Partial Class Form2
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(171, 173)
+        Me.Label6.Location = New System.Drawing.Point(154, 207)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(45, 21)
+        Me.Label6.Size = New System.Drawing.Size(57, 27)
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "Sexo"
         '
         'txtNom
         '
-        Me.txtNom.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNom.Location = New System.Drawing.Point(222, 119)
+        Me.txtNom.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNom.Location = New System.Drawing.Point(217, 150)
         Me.txtNom.Name = "txtNom"
-        Me.txtNom.Size = New System.Drawing.Size(240, 24)
+        Me.txtNom.Size = New System.Drawing.Size(265, 34)
         Me.txtNom.TabIndex = 13
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(79, 118)
+        Me.Label7.Location = New System.Drawing.Point(38, 152)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(137, 21)
+        Me.Label7.Size = New System.Drawing.Size(173, 27)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "Nombre Completo"
         '
         'txtContra2
         '
-        Me.txtContra2.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtContra2.Location = New System.Drawing.Point(222, 505)
+        Me.txtContra2.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtContra2.Location = New System.Drawing.Point(217, 536)
         Me.txtContra2.Name = "txtContra2"
-        Me.txtContra2.Size = New System.Drawing.Size(240, 24)
+        Me.txtContra2.Size = New System.Drawing.Size(265, 34)
         Me.txtContra2.TabIndex = 15
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(58, 503)
+        Me.Label8.Location = New System.Drawing.Point(9, 537)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(158, 21)
+        Me.Label8.Size = New System.Drawing.Size(202, 27)
         Me.Label8.TabIndex = 14
         Me.Label8.Text = "Repita la contraseña"
         '
         'txtContra1
         '
-        Me.txtContra1.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtContra1.Location = New System.Drawing.Point(222, 450)
+        Me.txtContra1.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtContra1.Location = New System.Drawing.Point(217, 481)
         Me.txtContra1.Name = "txtContra1"
-        Me.txtContra1.Size = New System.Drawing.Size(240, 24)
+        Me.txtContra1.Size = New System.Drawing.Size(265, 34)
         Me.txtContra1.TabIndex = 17
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(128, 448)
+        Me.Label9.Location = New System.Drawing.Point(97, 482)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(88, 21)
+        Me.Label9.Size = New System.Drawing.Size(114, 27)
         Me.Label9.TabIndex = 16
         Me.Label9.Text = "Contraseña"
+        '
+        'comboSexo
+        '
+        Me.comboSexo.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.comboSexo.FormattingEnabled = True
+        Me.comboSexo.Items.AddRange(New Object() {"Masculino", "Femenino"})
+        Me.comboSexo.Location = New System.Drawing.Point(217, 205)
+        Me.comboSexo.Name = "comboSexo"
+        Me.comboSexo.Size = New System.Drawing.Size(265, 34)
+        Me.comboSexo.TabIndex = 20
         '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
         Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(499, 404)
+        Me.Button1.Location = New System.Drawing.Point(521, 367)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(182, 70)
+        Me.Button1.Size = New System.Drawing.Size(186, 44)
         Me.Button1.TabIndex = 18
         Me.Button1.UseVisualStyleBackColor = False
-        '
-        'comboSexo
-        '
-        Me.comboSexo.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.comboSexo.FormattingEnabled = True
-        Me.comboSexo.Items.AddRange(New Object() {"Masculino", "Femenino"})
-        Me.comboSexo.Location = New System.Drawing.Point(222, 174)
-        Me.comboSexo.Name = "comboSexo"
-        Me.comboSexo.Size = New System.Drawing.Size(240, 24)
-        Me.comboSexo.TabIndex = 20
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Font = New System.Drawing.Font("Comic Sans MS", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Comic Sans MS", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(480, 149)
+        Me.Label10.Location = New System.Drawing.Point(230, 9)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(225, 45)
+        Me.Label10.Size = New System.Drawing.Size(337, 68)
         Me.Label10.TabIndex = 21
         Me.Label10.Text = "Crear Cuenta"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.Cyan
+        Me.Label11.Location = New System.Drawing.Point(647, 431)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(69, 18)
+        Me.Label11.TabIndex = 23
+        Me.Label11.Text = "Click Aquí"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
+        Me.Label12.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(503, 431)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(147, 18)
+        Me.Label12.TabIndex = 22
+        Me.Label12.Text = "¿Ya tienes una cuenta?"
         '
         'Form2
         '
@@ -261,6 +286,8 @@ Partial Class Form2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(744, 602)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.comboSexo)
         Me.Controls.Add(Me.Button1)
@@ -281,7 +308,9 @@ Partial Class Form2
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtCed)
         Me.Controls.Add(Me.Label1)
+        Me.MaximizeBox = False
         Me.Name = "Form2"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -305,7 +334,9 @@ Partial Class Form2
     Friend WithEvents Label8 As Windows.Forms.Label
     Friend WithEvents txtContra1 As Windows.Forms.TextBox
     Friend WithEvents Label9 As Windows.Forms.Label
-    Friend WithEvents Button1 As Windows.Forms.Button
     Friend WithEvents comboSexo As Windows.Forms.ComboBox
+    Friend WithEvents Button1 As Windows.Forms.Button
     Friend WithEvents Label10 As Windows.Forms.Label
+    Friend WithEvents Label11 As Windows.Forms.Label
+    Friend WithEvents Label12 As Windows.Forms.Label
 End Class
